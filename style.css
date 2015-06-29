@@ -1,0 +1,216 @@
+.container {
+  -ms-box-orient: horizontal;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -moz-flex;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: space-around;
+  justify-content: space-around;
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+  align-items: stretch;
+  -webkit-align-items: stretch; }
+
+#topMenuBar .main {
+  -ms-box-orient: horizontal;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -moz-flex;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: space-around;
+  justify-content: space-around;
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+  -webkit-align-items: stretch;
+  align-items: stretch;
+  flex: 1 1 80%;
+  -ms-flex: 1 1 80%;
+  -webkit-box-flex: 1 1 80%;
+  background: green; }
+
+#topMenuBar .sidebar {
+  flex: 1 1 20%;
+  -ms-flex: 1 1 20%;
+  -webkit-box-flex: 1 1 20%;
+  background: blue; }
+
+#controlPanel {
+  height: 30vh; }
+
+#controlPanel .main {
+  flex: 1 1 80%;
+  -ms-flex: 1 1 80%;
+  -webkit-box-flex: 1 1 80%;
+  background: green; }
+
+#controlPanel .sidebar {
+  -ms-box-orient: horizontal;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -moz-flex;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: space-around;
+  justify-content: space-around;
+  -webkit-flex-flow: column wrap;
+  flex-flow: column wrap;
+  -webkit-align-items: stretch;
+  align-items: stretch;
+  flex: 1 1 20%;
+  -ms-flex: 1 1 20%;
+  -webkit-box-flex: 1 1 20%;
+  background: black; }
+
+#lifePanel {
+  height: 50px; }
+
+#lifePanel .main {
+  flex: 1 1 80%;
+  -ms-flex: 1 1 80%;
+  -webkit-box-flex: 1 1 80%;
+  background: #F57373; }
+
+#lifePanel .sidebar {
+  flex: 1 1 20%;
+  -ms-flex: 1 1 20%;
+  -webkit-box-flex: 1 1 20%;
+  background: darkred; }
+
+#incomePanel {
+  height: 25vh; }
+
+#incomePanel .main {
+  flex: 1 1 80%;
+  -ms-flex: 1 1 80%;
+  -webkit-box-flex: 1 1 80%;
+  background: #73BCF5; }
+
+#incomePanel .sidebar {
+  flex: 1 1 20%;
+  -ms-flex: 1 1 20%;
+  -webkit-box-flex: 1 1 20%;
+  background: #3181EC; }
+
+#assetPanel {
+  height: 25vh; }
+
+#assetPanel .main {
+  flex: 1 1 80%;
+  -ms-flex: 1 1 80%;
+  -webkit-box-flex: 1 1 80%;
+  background: #F5CE73; }
+
+#assetPanel .sidebar {
+  flex: 1 1 20%;
+  -ms-flex: 1 1 20%;
+  -webkit-box-flex: 1 1 20%;
+  background: #ECC631; }
+
+input[type=radio] {
+  position: absolute;
+  top: -9999px;
+  left: -9999px; }
+
+#wage1L {
+  display: block;
+  padding: 0.5em;
+  width: auto;
+  color: white;
+  background-color: #FF0000;
+  font-size: 1em;
+  text-align: center;
+  flex: 1 1 15%;
+  font-family: Arial, Helvetica, sans-serif; }
+
+#wage2L {
+  display: block;
+  padding: 0.5em;
+  width: auto;
+  color: white;
+  background-color: #0073FF;
+  font-size: 1em;
+  text-align: center;
+  flex: 1 1 15%;
+  font-family: Arial, Helvetica, sans-serif; }
+
+#interestRateL {
+  display: block;
+  padding: 0.5em;
+  width: auto;
+  color: white;
+  background-color: #FFD500;
+  font-size: 1em;
+  text-align: center;
+  flex: 1 1 15%;
+  font-family: Arial, Helvetica, sans-serif; }
+
+#stockReturnL {
+  display: block;
+  padding: 0.5em;
+  width: auto;
+  color: white;
+  background-color: #8900FF;
+  font-size: 1em;
+  text-align: center;
+  flex: 1 1 15%;
+  font-family: Arial, Helvetica, sans-serif; }
+
+#housePriceL {
+  display: block;
+  padding: 0.5em;
+  width: auto;
+  color: white;
+  background-color: #00E2FF;
+  font-size: 1em;
+  text-align: center;
+  flex: 1 1 15%;
+  font-family: Arial, Helvetica, sans-serif; }
+
+#infoL {
+  padding: 0.5em;
+  width: auto;
+  color: white;
+  background-color: #BCBCBC;
+  font-size: 1em;
+  text-align: center;
+  justify-content: center;
+  -webkit-justify-content: center;
+  flex: 1 1 auto;
+  font-family: Arial, Helvetica, sans-serif;
+  position: relative;
+  outline: black solid thin; }
+
+#historicalL {
+  padding: 0.5em;
+  width: auto;
+  color: white;
+  background-color: #BCBCBC;
+  font-size: 1em;
+  text-align: center;
+  justify-content: center;
+  -webkit-justify-content: center;
+  flex: 1 1 auto;
+  font-family: Arial, Helvetica, sans-serif;
+  position: relative;
+  outline: black solid thin; }
+
+#randomizeL {
+  padding: 0.5em;
+  width: auto;
+  color: white;
+  background-color: #BCBCBC;
+  font-size: 1em;
+  text-align: center;
+  justify-content: center;
+  -webkit-justify-content: center;
+  flex: 1 1 auto;
+  font-family: Arial, Helvetica, sans-serif;
+  position: relative;
+  outline: black solid thin; }
+
+/*# sourceMappingURL=style.css.map */

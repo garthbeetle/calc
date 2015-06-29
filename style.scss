@@ -1,0 +1,110 @@
+@import 'palettes';
+@import 'mixins';
+
+// Variables
+$controlPanelHeight:30vh;
+$displayPanelHeight:25vh;
+$lifePanelHeight:50px;
+
+// Make every container div flex
+.container{
+  @include container{}
+}
+
+// Top buttons
+#topMenuBar .main{
+  @include hFlexBox{}
+  @include flex(1,1,80%);
+  background: green;
+
+}
+#topMenuBar .sidebar{
+  @include flex(1,1,20%);
+  background: blue;
+}
+
+// Control Graph
+#controlPanel{
+  height:$controlPanelHeight;
+}
+#controlPanel .main{
+  @include flex(1,1,80%);
+  background: green;
+}
+#controlPanel .sidebar{
+  @include vFlexBox{}
+  @include flex(1,1,20%);
+  background: black;
+}
+
+// Life Panel
+#lifePanel{
+  height:$lifePanelHeight;
+}
+#lifePanel .main{
+  @include flex(1,1,80%);
+  background: #F57373;
+}
+#lifePanel .sidebar{
+  @include flex(1,1,20%);
+  background: darkred;
+}
+
+// Income Panel
+#incomePanel{
+  height:$displayPanelHeight;
+}
+#incomePanel .main{
+  @include flex(1,1,80%);
+  background: #73BCF5;
+}
+#incomePanel .sidebar{
+  @include flex(1,1,20%);
+  background: #3181EC;
+}
+
+// Asset Panel
+#assetPanel{
+  height:$displayPanelHeight;
+}
+#assetPanel .main{
+  @include flex(1,1,80%);
+  background: #F5CE73;
+}
+#assetPanel .sidebar{
+  @include flex(1,1,20%);
+  background: #ECC631;
+}
+
+
+// Top Buttons 
+input[type=radio]{
+   position: absolute;
+   top: -9999px;
+   left: -9999px;
+  }
+#wage1L{
+  @include tButton($wage1Color){}
+}
+#wage2L{
+  @include tButton($wage2Color){}
+}
+#interestRateL{
+  @include tButton($interestRateColor){}
+}
+#stockReturnL{
+  @include tButton($stockReturnColor){}
+}
+#housePriceL{
+  @include tButton($housePriceColor){}
+}
+#infoL{
+  @include sButton($sideButtonsColor){}
+}
+#historicalL{
+  @include sButton($sideButtonsColor){}
+}
+#randomizeL{
+  @include sButton($sideButtonsColor){}
+}
+

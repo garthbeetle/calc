@@ -1,0 +1,121 @@
+@mixin hFlexBox{
+  -ms-box-orient: horizontal;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -moz-flex;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: space-around;
+  justify-content: space-around;
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+  -webkit-align-items: stretch;
+  align-items: stretch;
+}
+
+@mixin vFlexBox{
+  -ms-box-orient: horizontal;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -moz-flex;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: space-around;
+  justify-content: space-around;
+  -webkit-flex-flow: column wrap;
+  flex-flow: column wrap;
+  -webkit-align-items: stretch;
+  align-items: stretch;
+}
+
+@mixin flex($grow,$shrink,$basis){
+    flex: $grow $shrink $basis;
+  -ms-flex: $grow $shrink $basis;
+  -webkit-box-flex:$grow $shrink $basis;
+}
+
+@mixin container{
+  -ms-box-orient: horizontal;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -moz-flex;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: space-around;
+  justify-content: space-around;
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+  align-items: stretch;
+  -webkit-align-items: stretch;
+}
+
+@mixin main{
+  -ms-box-orient: horizontal;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -moz-flex;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: space-around;
+  justify-content: space-around;
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+  -webkit-align-items: stretch;
+  align-items: stretch;
+}
+
+@mixin sidebar{
+  -ms-box-orient: vertical;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -moz-flex;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: space-around;
+  justify-content: space-around;
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+  -webkit-align-items: stretch;
+  align-items: stretch;
+  flex: 1 1 20%;
+  -ms-flex: 1 1 80%;
+  -webkit-box-flex:1 1 80%;
+}
+
+@mixin tButton ($backColor) {
+display:block;
+padding: 0.5em;
+width: auto;  
+color: white;
+background-color: $backColor;
+font-size: 1em;
+text-align: center;
+flex: 1 1 15%;
+font-family:Arial, Helvetica, sans-serif;
+}
+
+@mixin sButton ($backColor) {
+padding: 0.5em;
+width: auto;  
+color: white;
+background-color: $backColor;
+font-size: 1em;
+text-align: center;
+justify-content:center;
+-webkit-justify-content:center;
+flex: 1 1 auto;
+font-family:Arial, Helvetica, sans-serif;
+position:relative;
+// top: 50%;
+// -webkit-transform: translateY(-50%);
+// -ms-transform: translateY(-50%);
+// transform: translateY(-50%);
+outline:black solid thin;
+}
+
+
